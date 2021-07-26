@@ -27,13 +27,17 @@ function addDots(sec) {
 
 }
 
-setTimeout(() => {
+window.onload = function() {
+   setTimeout(() => {
     addClass()
 }, 1000);
 
 setTimeout(() => {
     interval = setInterval(addDots, time)
 }, 2000);
+  };
+
+
 
 
 // sekcja balls kolory
@@ -59,7 +63,7 @@ balls.forEach((ball) => {
     })
 })
 
-// sekcjana telefony i tablety
+// sekcja balls kolory na telefony i tablety
 
 balls.forEach((ball) => {
 
