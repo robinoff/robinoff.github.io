@@ -30,11 +30,11 @@ function addDots() {
 
 setTimeout(() => {
     addClass()
-}, 1000);
+}, 2000);
 
 setTimeout(() => {
     interval = setInterval(addDots, time)
-}, 2000);
+}, 3000);
 
 
 // sekcja balls kolory
@@ -62,23 +62,6 @@ balls.forEach((ball) => {
 
 // sekcja balls kolory na telefony i tablety
 
-balls.forEach((ball, e) => {
-
-    ball.addEventListener('touchenter', function () {
-        const red = Math.floor(Math.random() * 255);
-        const green = Math.floor(Math.random() * 255);
-        const blue = Math.floor(Math.random() * 255);
-
-        const redF = Math.floor(Math.random() * 255);
-        const greenF = Math.floor(Math.random() * 255);
-        const blueF = Math.floor(Math.random() * 255);
-
-        e.target.style.backgroundColor = `rgb(${red}%, ${green}%, ${blue}%)`;
-        e.target.firstElementChild.style.color = `rgb(${redF}%, ${greenF}%, ${blueF}%)`;
-
-
-    })
-})
 
 
 
