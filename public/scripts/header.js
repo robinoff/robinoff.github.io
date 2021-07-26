@@ -1,5 +1,5 @@
 // sekcja header h1
-window.onload = function() {
+
 const h1 = document.querySelector('.loading');
 
 const text = "FITNESS MÓZGU";
@@ -26,9 +26,6 @@ function addDots(sec) {
     }
 
 }
-
-
-   
 
 
 setTimeout(() => {
@@ -149,5 +146,3 @@ arrow.addEventListener('click', function () {
         behavior: "smooth"
     })
 })
-
-};
