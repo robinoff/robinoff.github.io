@@ -73,8 +73,8 @@ balls.forEach((ball) => {
         const greenF = Math.floor(Math.random() * 255);
         const blueF = Math.floor(Math.random() * 255);
 
-        this.style.backgroundColor = `rgb(${red}%, ${green}%, ${blue}%)`;
-        this.firstElementChild.style.color = `rgb(${redF}%, ${greenF}%, ${blueF}%)`;
+        ball.style.backgroundColor = `rgb(${red}%, ${green}%, ${blue}%)`;
+        ball.firstElementChild.style.color = `rgb(${redF}%, ${greenF}%, ${blueF}%)`;
 
 
     })
