@@ -59,6 +59,26 @@ balls.forEach((ball) => {
     })
 })
 
+// sekcjana telefony i tablety
+
+balls.forEach((ball) => {
+
+    ball.addEventListener('touchmove', function () {
+        const red = Math.floor(Math.random() * 255);
+        const green = Math.floor(Math.random() * 255);
+        const blue = Math.floor(Math.random() * 255);
+
+        const redF = Math.floor(Math.random() * 255);
+        const greenF = Math.floor(Math.random() * 255);
+        const blueF = Math.floor(Math.random() * 255);
+
+        this.style.backgroundColor = `rgb(${red}%, ${green}%, ${blue}%)`;
+        this.firstElementChild.style.color = `rgb(${redF}%, ${greenF}%, ${blueF}%)`;
+
+
+    })
+})
+
 // sekcja balls facebook
 
 balls.forEach((ball) => {
