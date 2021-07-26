@@ -61,7 +61,6 @@ balls.forEach((ball) => {
 })
 
 // sekcja balls kolory na telefony i tablety
-
 balls.forEach((ball) => {
 
     ball.addEventListener('touchenter', function () {
@@ -79,6 +78,8 @@ balls.forEach((ball) => {
 
     })
 })
+
+
 
 // sekcja balls facebook
 
