@@ -1,5 +1,5 @@
 // sekcja header h1
-
+window.onload = function() {
 const h1 = document.querySelector('.loading');
 
 const text = "FITNESS MÓZGU";
@@ -27,17 +27,17 @@ function addDots(sec) {
 
 }
 
-window.onload = function() {
-   setTimeout(() => {
+
+   
+
+
+setTimeout(() => {
     addClass()
 }, 1000);
 
 setTimeout(() => {
     interval = setInterval(addDots, time)
 }, 2000);
-  };
-
-
 
 
 // sekcja balls kolory
@@ -149,3 +149,5 @@ arrow.addEventListener('click', function () {
         behavior: "smooth"
     })
 })
+
+};
