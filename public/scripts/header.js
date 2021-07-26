@@ -60,27 +60,23 @@ balls.forEach((ball) => {
     })
 })
 
-// sekcja balls kolory na telefony i tablety
+// dotykowe ekrany
 
-balls.forEach((ball) => {
+document.addEventListener('touchstart', function () {
+   console.log('działa');
+   balls.forEach((ball) => {
+    const red = Math.floor(Math.random() * 255);
+    const green = Math.floor(Math.random() * 255);
+    const blue = Math.floor(Math.random() * 255);
 
-    ball.addEventListener('touchstart', function () {
-        const red = Math.floor(Math.random() * 255);
-        const green = Math.floor(Math.random() * 255);
-        const blue = Math.floor(Math.random() * 255);
+    const redF = Math.floor(Math.random() * 255);
+    const greenF = Math.floor(Math.random() * 255);
+    const blueF = Math.floor(Math.random() * 255);
 
-        const redF = Math.floor(Math.random() * 255);
-        const greenF = Math.floor(Math.random() * 255);
-        const blueF = Math.floor(Math.random() * 255);
-
-        ball.style.backgroundColor = `rgb(${red}%, ${green}%, ${blue}%)`;
-        ball.firstElementChild.style.color = `rgb(${redF}%, ${greenF}%, ${blueF}%)`;
-
-
-    })
+    ball.style.backgroundColor = `rgb(${red}%, ${green}%, ${blue}%)`;
+    ball.firstElementChild.style.color = `rgb(${redF}%, ${greenF}%, ${blueF}%)`;
+   })
 })
-
-
 
 // sekcja balls facebook
 
