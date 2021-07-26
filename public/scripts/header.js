@@ -17,7 +17,7 @@ function addClass() {
 
 
 
-function addDots(sec) {
+function addDots() {
 
     h1.textContent += text[index];
     index++;
