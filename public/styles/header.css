@@ -75,15 +75,6 @@ h1.loading {
     height: 40px;
     background-color: red;
     border-radius: 50%;
-    
-}
-.one.active {
-    animation: red 6s 4s linear infinite;
-}
-.two.active {
-    animation: red 6s 4s linear infinite;
-}
-.three.active {
     animation: red 6s 4s linear infinite;
 }
 
