@@ -1,4 +1,8 @@
 // sekcja header h1
+window.onload = function() {
+   init()
+    
+  };
 
 const h1 = document.querySelector('.loading');
 
@@ -144,3 +148,4 @@ arrow.addEventListener('click', function () {
         behavior: "smooth"
     })
 })
+
