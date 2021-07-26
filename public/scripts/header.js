@@ -14,7 +14,7 @@ window.onload = function() {
 const h1 = document.querySelector('.loading');
 
 const text = "FITNESS MÓZGU";
-let time = 200;
+let time = 170;
 let index = 0;
 let interval;
 
