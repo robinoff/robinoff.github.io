@@ -1,6 +1,13 @@
 // sekcja header h1
 window.onload = function() {
-   init()
+    setTimeout(() => {
+        addClass()
+    }, 2000);
+    
+    setTimeout(() => {
+        interval = setInterval(addDots, time)
+    }, 3000);
+    
     
   };
 
@@ -32,13 +39,6 @@ function addDots() {
 }
 
 
-setTimeout(() => {
-    addClass()
-}, 2000);
-
-setTimeout(() => {
-    interval = setInterval(addDots, time)
-}, 3000);
 
 
 // sekcja balls kolory
