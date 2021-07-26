@@ -2,11 +2,11 @@
 window.onload = function() {
     setTimeout(() => {
         addClass()
-    }, 2000);
+    }, 1000);
     
     setTimeout(() => {
         interval = setInterval(addDots, time)
-    }, 3000);
+    }, 2000);
     
     
   };
