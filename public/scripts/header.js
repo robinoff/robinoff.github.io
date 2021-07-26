@@ -62,6 +62,23 @@ balls.forEach((ball) => {
 
 // sekcja balls kolory na telefony i tablety
 
+balls.forEach((ball) => {
+
+    ball.addEventListener('touchenter', function () {
+        const red = Math.floor(Math.random() * 255);
+        const green = Math.floor(Math.random() * 255);
+        const blue = Math.floor(Math.random() * 255);
+
+        const redF = Math.floor(Math.random() * 255);
+        const greenF = Math.floor(Math.random() * 255);
+        const blueF = Math.floor(Math.random() * 255);
+
+        this.style.backgroundColor = `rgb(${red}%, ${green}%, ${blue}%)`;
+        this.firstElementChild.style.color = `rgb(${redF}%, ${greenF}%, ${blueF}%)`;
+
+
+    })
+})
 
 
 
