@@ -7,8 +7,7 @@ window.onload = function() {
     setTimeout(() => {
         interval = setInterval(addDots, time)
     }, 1000);
-    
-    
+        
   };
 
 const h1 = document.querySelector('.loading');
