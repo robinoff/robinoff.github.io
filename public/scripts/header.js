@@ -8,7 +8,7 @@ window.onload = function() {
         interval = setInterval(addDots, time)
     }, 1000);
     
-    
+    document.querySelectorAll('.ball').classList.add('active');
   };
 
 const h1 = document.querySelector('.loading');
