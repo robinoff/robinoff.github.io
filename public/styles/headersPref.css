@@ -1137,18 +1137,7 @@ div.arrows.active {
 }
 
 @media (max-width: 640px) {
-    .wrapper {
-       
-        background-image: url('../img/pileczki.jpg');
-        background-position: center;
-        background-repeat: no-repeat;
-        background-color: aliceblue;
-        width: 100%;
-        height: 100vh;
-        overflow: hidden;
-        margin: 0 auto 50px;
-    
-    }
+   
     h1.loading {
         font-size: 25px;
     }
