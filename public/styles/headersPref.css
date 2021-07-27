@@ -33,7 +33,7 @@ body {
     position: relative;
     top: 0;
     left: 0;
-    background: url('../img/pileczki.jpg');
+    background-image: url('../img/pileczki.jpg');
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
