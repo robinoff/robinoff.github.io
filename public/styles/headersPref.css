@@ -35,7 +35,7 @@ body {
     left: 0;
     background-image: url('../img/pileczki.jpg');
     background-size: cover;
-    -webkit-background-size: cover;
+    -webkit-background-size: 1024px 780px;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-position: center;
@@ -233,116 +233,6 @@ h1.loading {
 
 /* animacja */
 
-
-@-webkit-keyframes red {
-    0% {
-        top: 90%;
-        left: 20%;
-    }
-
-    5% {
-        top: 74%;
-        left: 26%;
-    }
-
-    10% {
-        top: 58%;
-        left: 32%;
-    }
-
-    15% {
-        top: 42%;
-        left: 38%;
-    }
-
-    20% {
-        top: 26%;
-        left: 44%;
-    }
-
-    25% {
-        top: 10%;
-        left: 50%;
-    }
-
-    30% {
-        top: 26%;
-        left: 56%;
-    }
-
-    35% {
-        top: 42%;
-        left: 62%;
-    }
-
-    40% {
-        top: 58%;
-        left: 68%;
-    }
-
-    45% {
-        top: 74%;
-        left: 74%;
-    }
-
-    50% {
-        top: 90%;
-        left: 80%;
-    }
-
-    55% {
-        top: 74%;
-        left: 74%;
-    }
-
-    60% {
-        top: 58%;
-        left: 68%;
-    }
-
-    65% {
-        top: 42%;
-        left: 62%;
-    }
-
-    70% {
-        top: 26%;
-        left: 56%;
-    }
-
-    75% {
-        top: 10%;
-        left: 50%;
-    }
-
-    80% {
-        top: 26%;
-        left: 44%;
-    }
-
-    85% {
-        top: 42%;
-        left: 38%;
-    }
-
-    90% {
-        top: 58%;
-        left: 32%;
-    }
-
-    95% {
-        top: 74%;
-        left: 26%;
-    }
-
-    100% {
-        top: 90%;
-        left: 20%;
-    }
-
-}
-
-
 @keyframes red {
     0% {
         top: 90%;
@@ -451,7 +341,7 @@ h1.loading {
 
 }
 
-@-webkit-keyframes blue {
+@-webkit-keyframes red {
     0% {
         top: 90%;
         left: 20%;
@@ -667,30 +557,30 @@ h1.loading {
 
 }
 
-@-webkit-keyframes green {
+@-webkit-keyframes blue {
     0% {
         top: 90%;
-        left: 80%;
+        left: 20%;
     }
 
     5% {
         top: 74%;
-        left: 74%;
+        left: 26%;
     }
 
     10% {
         top: 58%;
-        left: 68%;
+        left: 32%;
     }
 
     15% {
         top: 42%;
-        left: 62%;
+        left: 38%;
     }
 
     20% {
         top: 26%;
-        left: 56%;
+        left: 44%;
     }
 
     25% {
@@ -700,47 +590,47 @@ h1.loading {
 
     30% {
         top: 26%;
-        left: 44%;
+        left: 56%;
     }
 
     35% {
         top: 42%;
-        left: 38%;
+        left: 62%;
     }
 
     40% {
         top: 58%;
-        left: 32%;
+        left: 68%;
     }
 
     45% {
         top: 74%;
-        left: 26%;
+        left: 74%;
     }
 
     50% {
         top: 90%;
-        left: 20%;
+        left: 80%;
     }
 
     55% {
         top: 74%;
-        left: 26%;
+        left: 74%;
     }
 
     60% {
         top: 58%;
-        left: 32%;
+        left: 68%;
     }
 
     65% {
         top: 42%;
-        left: 38%;
+        left: 62%;
     }
 
     70% {
         top: 26%;
-        left: 44%;
+        left: 56%;
     }
 
     75% {
@@ -750,27 +640,27 @@ h1.loading {
 
     80% {
         top: 26%;
-        left: 56%;
+        left: 44%;
     }
 
     85% {
         top: 42%;
-        left: 62%;
+        left: 38%;
     }
 
     90% {
         top: 58%;
-        left: 68%;
+        left: 32%;
     }
 
     95% {
         top: 74%;
-        left: 74%;
+        left: 26%;
     }
 
     100% {
         top: 90%;
-        left: 80%;
+        left: 20%;
     }
 
 }
@@ -882,6 +772,116 @@ h1.loading {
     }
 
 }
+
+
+@-webkit-keyframes green {
+    0% {
+        top: 90%;
+        left: 80%;
+    }
+
+    5% {
+        top: 74%;
+        left: 74%;
+    }
+
+    10% {
+        top: 58%;
+        left: 68%;
+    }
+
+    15% {
+        top: 42%;
+        left: 62%;
+    }
+
+    20% {
+        top: 26%;
+        left: 56%;
+    }
+
+    25% {
+        top: 10%;
+        left: 50%;
+    }
+
+    30% {
+        top: 26%;
+        left: 44%;
+    }
+
+    35% {
+        top: 42%;
+        left: 38%;
+    }
+
+    40% {
+        top: 58%;
+        left: 32%;
+    }
+
+    45% {
+        top: 74%;
+        left: 26%;
+    }
+
+    50% {
+        top: 90%;
+        left: 20%;
+    }
+
+    55% {
+        top: 74%;
+        left: 26%;
+    }
+
+    60% {
+        top: 58%;
+        left: 32%;
+    }
+
+    65% {
+        top: 42%;
+        left: 38%;
+    }
+
+    70% {
+        top: 26%;
+        left: 44%;
+    }
+
+    75% {
+        top: 10%;
+        left: 50%;
+    }
+
+    80% {
+        top: 26%;
+        left: 56%;
+    }
+
+    85% {
+        top: 42%;
+        left: 62%;
+    }
+
+    90% {
+        top: 58%;
+        left: 68%;
+    }
+
+    95% {
+        top: 74%;
+        left: 74%;
+    }
+
+    100% {
+        top: 90%;
+        left: 80%;
+    }
+
+}
+
 
 
 
