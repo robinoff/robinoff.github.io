@@ -1,8 +1,10 @@
 // sekcja header h1
 
 window.onload = function() {
-    console.log('ładuje');
+    const img = document.querySelector('.wrapper img');
+    img.src = '/public/img/pileczki.jpg'
   };
+  
 const h1 = document.querySelector('.loading');
 
 const text = "FITNESS MÓZGU";
