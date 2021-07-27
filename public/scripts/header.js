@@ -1,6 +1,8 @@
 // sekcja header h1
 
-
+window.onload = function() {
+    console.log('ładuje');
+  };
 const h1 = document.querySelector('.loading');
 
 const text = "FITNESS MÓZGU";
