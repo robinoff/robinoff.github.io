@@ -34,10 +34,10 @@ body {
     top: 0;
     left: 0;
     background-image: url('../img/pileczki.jpg');
-    -webkit-background-size: 1920px 1284px;
+    background-size: cover;
+    -webkit-background-size: 1024px 780px;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: 1920px 1284px;
     background-position: center;
     background-repeat: no-repeat;
     /* background-attachment: fixed; */
