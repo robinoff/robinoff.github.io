@@ -21,7 +21,7 @@ body {
     left: 0;
     background-image: url('../img/pileczki.jpg');
     background-position: center;
-    background-size: cover;
+    background-size: 1024px 760px;
     background-repeat: no-repeat;
     background-attachment: fixed;
     width: 100%;
