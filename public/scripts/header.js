@@ -4,7 +4,7 @@
 const h1 = document.querySelector('.loading');
 
 const text = "FITNESS MÓZGU";
-let time = 170;
+let time = 140;
 let index = 0;
 let interval;
 
