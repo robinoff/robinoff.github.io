@@ -1,8 +1,5 @@
 // sekcja header h1
-// window.onload = function() {
-     
-        
-//   };
+
 
 const h1 = document.querySelector('.loading');
 
