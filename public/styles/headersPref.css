@@ -233,7 +233,7 @@ h1.loading {
 /* animacja */
 
 
-@-webkit-keyframes red {
+/* @-webkit-keyframes red {
     0% {
         top: 90%;
         left: 20%;
@@ -339,7 +339,7 @@ h1.loading {
         left: 20%;
     }
 
-}
+} */
 
 
 @keyframes red {
@@ -450,7 +450,7 @@ h1.loading {
 
 }
 
-@-webkit-keyframes blue {
+/* @-webkit-keyframes blue {
     0% {
         top: 90%;
         left: 20%;
@@ -556,7 +556,7 @@ h1.loading {
         left: 20%;
     }
 
-}
+} */
 
 @keyframes blue {
     0% {
@@ -666,7 +666,7 @@ h1.loading {
 
 }
 
-@-webkit-keyframes green {
+/* @-webkit-keyframes green {
     0% {
         top: 90%;
         left: 80%;
@@ -772,7 +772,7 @@ h1.loading {
         left: 80%;
     }
 
-}
+} */
 
 @keyframes green {
     0% {
