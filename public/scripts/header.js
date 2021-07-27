@@ -2,9 +2,16 @@
 
 window.onload = function() {
     const img = document.querySelector('.wrapper img');
-    img.src = '/public/img/pileczki.jpg'
+    img.src = '/public/img/pileczki.jpg';
+    setTimeout(() => {
+        addClass()
+    }, 1000);
+    
+    setTimeout(() => {
+        interval = setInterval(addDots, time)
+    }, 2000);
   };
-  
+
 const h1 = document.querySelector('.loading');
 
 const text = "FITNESS MÓZGU";
