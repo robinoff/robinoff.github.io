@@ -102,7 +102,7 @@ document.addEventListener('scroll', function () {
 
     if (scroolPosition < sectionBlog) {
 
-        wrapper.style.filter = `grayscale(${scroolPosition/wrapperHeight})`
+        wrapper.style.filter = `grayscale(${20* scroolPosition/wrapperHeight})`
         wrapper.style.opacity = `${1 - scroolPosition/wrapperHeight}`
     }
     // console.log(scroolPosition, sectionBlog);
