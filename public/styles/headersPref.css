@@ -35,7 +35,7 @@ body {
     left: 0;
     background-image: url('../img/pileczki.jpg');
     background-size: cover;
-    -webkit-background-size: cover;
+    -webkit-background-size: 1024px 780px;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-position: center;
@@ -1147,12 +1147,6 @@ div.arrows.active {
 }
 
 @media (max-width: 640px) {
-    .wrapper {
-        background-size: cover;
-        -webkit-background-size: 1024px 780px;
-        background-color: whitesmoke;       
-    
-    }
    
     h1.loading {
         font-size: 25px;
@@ -1331,12 +1325,6 @@ div.arrows.active {
 }
 
 @media (max-width: 414px) {
-    .wrapper {
-        background-size: cover;
-        -webkit-background-size: 1024px 780px;
-        background-color: whitesmoke;       
-    
-    }
     h1.loading {
         font-size: 25px;
     }
@@ -1426,12 +1414,6 @@ div.arrows.active {
 
 
 @media (max-width: 320px) {
-    .wrapper {
-        background-size: cover;
-        -webkit-background-size: 1024px 780px;
-        background-color: whitesmoke;       
-    
-    }
     h1.loading {
         font-size: px;
     }
