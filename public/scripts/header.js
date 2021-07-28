@@ -33,11 +33,11 @@ function addDots() {
 window.addEventListener('load', function(e) {
     setTimeout(() => {
         addClass()
-    }, 1000);
+    }, 100);
 
     setTimeout(() => {
         interval = setInterval(addDots, time)
-    }, 2000);
+    }, 200);
 
     balls.forEach((ball) => {
         ball.classList.add('start');
@@ -127,11 +127,11 @@ document.addEventListener('scroll', function () {
 
     const scrollPosition = html.scrollTop;
     const scrollTotal = html.scrollHeight - html.clientHeight;
-    console.log(scrollPosition, scrollTotal);
+    // console.log(scrollPosition, scrollTotal);
 
     const iconF = document.querySelectorAll('i.fab');
     iconF.forEach((icon) => {
-        if (scrollPosition / scrollTotal > 0.2) {
+        if (scrollPosition / scrollTotal > 0.5) {
             icon.classList.add('active');
         }
     })
