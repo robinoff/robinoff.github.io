@@ -87,7 +87,7 @@ function changeZIndex() {
     console.log(balls[index].style.zIndex);
 }
 
-const zIndex = setInterval(changeZIndex, 8000);
+setInterval(changeZIndex, 8000);
 
 
 // dotykowe ekrany
