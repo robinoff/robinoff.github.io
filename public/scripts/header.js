@@ -3,6 +3,7 @@
 
 
 const h1 = document.querySelector('.loading');
+const balls = document.querySelectorAll('.ball');
 
 const text = "FITNESS MÓZGU";
 let time = 140;
@@ -37,12 +38,15 @@ window.addEventListener('load', function(e) {
     setTimeout(() => {
         interval = setInterval(addDots, time)
     }, 2000);
+
+    balls.forEach((ball) => {
+        ball.classList.add('start');
+    })
   });
 
 
 // sekcja balls kolory
 
-const balls = document.querySelectorAll('.ball');
 
 
 balls.forEach((ball) => {

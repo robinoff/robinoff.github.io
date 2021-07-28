@@ -119,10 +119,9 @@ h1.loading {
     height: 40px;
     background-color: red;
     border-radius: 50%;
-    -webkit-animation: red 6s 4s linear infinite;
-            animation: red 6s 4s linear infinite;
+    /* -webkit-animation: red 6s 4s linear infinite;
+            animation: red 6s 4s linear infinite; */
 }
-
 
 
 .two {
@@ -136,9 +135,11 @@ h1.loading {
     height: 50px;
     background-color: green;
     border-radius: 50%;
-    -webkit-animation: green 6s 5s linear infinite;
-            animation: green 6s 5s linear infinite;
+    /* -webkit-animation: green 6s 5s linear infinite;
+            animation: green 6s 5s linear infinite; */
 }
+
+
 
 .three {
     position: absolute;
@@ -151,12 +152,27 @@ h1.loading {
     height: 60px;
     background-color: blue;
     border-radius: 50%;
-    -webkit-animation: blue 6s 6s linear infinite;
-            animation: blue 6s 6s linear infinite;
+    /* -webkit-animation: blue 6s 6s linear infinite;
+            animation: blue 6s 6s linear infinite; */
 
 
 
 }
+
+
+.one.start {
+    -webkit-animation: red 6s 4s linear infinite;
+            animation: red 6s 4s linear infinite;
+}
+.two.start {
+    -webkit-animation: green 6s 5s linear infinite;
+    animation: green 6s 5s linear infinite;
+}
+.three.start {
+    -webkit-animation: blue 6s 6s linear infinite;
+            animation: blue 6s 6s linear infinite;
+}
+
 
 .three i {
     display: none;
