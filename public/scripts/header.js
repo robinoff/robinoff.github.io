@@ -42,6 +42,7 @@ window.addEventListener('load', function (e) {
     balls.forEach((ball) => {
         ball.classList.add('start');
     })
+    setInterval(changeZIndex, 8000);
 });
 
 
