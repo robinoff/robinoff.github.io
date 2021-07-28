@@ -1098,12 +1098,6 @@ div.arrows.active {
 
 @media (max-width: 1025px) {
 
-    .wrapper {
-        background-size: cover;
-        -webkit-background-size: 1024px 780px;
-        background-color: whitesmoke;       
-    
-    }
     h1.loading {
         font-size: 50px;
     }
@@ -1115,7 +1109,7 @@ div.arrows.active {
 
 
     div.motto {
-        height: 35vh;
+        height: 25vh;
     }
 
 

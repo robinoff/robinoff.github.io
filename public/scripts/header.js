@@ -1,6 +1,7 @@
 // sekcja header h1
 
 
+
 const h1 = document.querySelector('.loading');
 
 const text = "FITNESS MÓZGU";
@@ -28,13 +29,16 @@ function addDots() {
 
 }
 
-setTimeout(() => {
-    addClass()
-}, 1000);
+window.addEventListener('load', function(e) {
+    setTimeout(() => {
+        addClass()
+    }, 1000);
 
-setTimeout(() => {
-    interval = setInterval(addDots, time)
-}, 2000);
+    setTimeout(() => {
+        interval = setInterval(addDots, time)
+    }, 2000);
+  });
+
 
 // sekcja balls kolory
 
