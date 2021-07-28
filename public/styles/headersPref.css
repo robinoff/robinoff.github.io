@@ -80,9 +80,7 @@ body {
     transform: translate(-50%, -50%);
     background-color: transparent;
     z-index: 2;
-
-
-
+   
 
 }
 
@@ -98,13 +96,10 @@ h1.loading {
     line-height: 10vh;
     font-size: 50px;
     color: white;
-    z-index: 111;
     letter-spacing: 4px;
     text-align: center;
     z-index: 3;
-
-
-
+    
 
 }
 
@@ -121,7 +116,9 @@ h1.loading {
     border-radius: 50%;
     /* -webkit-animation: red 6s 4s linear infinite;
             animation: red 6s 4s linear infinite; */
+            z-index: -1;
     
+
 }
 
 
@@ -154,7 +151,7 @@ h1.loading {
     height: 60px;
     background-color: blue;
     border-radius: 50%;
-    
+
     /* -webkit-animation: blue 6s 6s linear infinite;
             animation: blue 6s 6s linear infinite; */
 
@@ -237,11 +234,11 @@ h1.loading {
     width: 50%;
     height: 20vh;
     background-color: rgba(0, 0, 0, 0.5);
-    z-index: 222;
     -webkit-transition: .5s;
     -o-transition: .5s;
     transition: .5s;
     z-index: 1;
+   
 }
 
 .right {
@@ -254,11 +251,11 @@ h1.loading {
     width: 50%;
     height: 20vh;
     background-color: rgba(0, 0, 0, 0.5);
-    z-index: 222;
     -webkit-transition: .5s;
     -o-transition: .5s;
     transition: .5s;
     z-index: 1;
+   
 
 }
 
@@ -1110,7 +1107,7 @@ div.arrows {
     z-index: 555;
     font-size: 50px;
     color: red;
-  
+
 }
 
 div.arrows.active {
@@ -1538,8 +1535,3 @@ div.arrows.active {
         font-size: 30px;
     }
 }
-
-
-
-
-

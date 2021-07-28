@@ -42,7 +42,7 @@ window.addEventListener('load', function (e) {
     balls.forEach((ball) => {
         ball.classList.add('start');
     })
-    setInterval(changeZIndex, 8000);
+    
 });
 
 
@@ -70,16 +70,6 @@ balls.forEach((ball) => {
 
 // sekcja ball z-index
 
-
-// balls.forEach((ball) => {
-//     ball.addEventListener('mouseover', function () {
-//         const indexZ = Math.floor(Math.random() * (3 - 0 + 1) + 0);
-//         ball.style.zIndex = indexZ;
-//         console.log(indexZ);
-
-//     })
-
-// })
 
 function changeZIndex() {
     const indexZ = Math.floor(Math.random() * (3 - 0 + 1) + 0);
