@@ -30,7 +30,7 @@ function addDots() {
 
 }
 
-window.addEventListener('load', function(e) {
+window.addEventListener('load', function (e) {
     setTimeout(() => {
         addClass()
     }, 100);
@@ -42,7 +42,7 @@ window.addEventListener('load', function(e) {
     balls.forEach((ball) => {
         ball.classList.add('start');
     })
-  });
+});
 
 
 // sekcja balls kolory
@@ -67,22 +67,45 @@ balls.forEach((ball) => {
     })
 })
 
+// sekcja ball z-index
+
+
+// balls.forEach((ball) => {
+//     ball.addEventListener('mouseover', function () {
+//         const indexZ = Math.floor(Math.random() * (3 - 0 + 1) + 0);
+//         ball.style.zIndex = indexZ;
+//         console.log(indexZ);
+
+//     })
+
+// })
+
+function changeZIndex() {
+    const indexZ = Math.floor(Math.random() * (3 - 0 + 1) + 0);
+    const index =  Math.floor(Math.random() * balls.length);
+    balls[index].style.zIndex = indexZ;
+    console.log(balls[index].style.zIndex);
+}
+
+const zIndex = setInterval(changeZIndex, 8000);
+
+
 // dotykowe ekrany
 
 document.addEventListener('touchstart', function () {
-  
-   balls.forEach((ball) => {
-    const red = Math.floor(Math.random() * 255);
-    const green = Math.floor(Math.random() * 255);
-    const blue = Math.floor(Math.random() * 255);
 
-    const redF = Math.floor(Math.random() * 255);
-    const greenF = Math.floor(Math.random() * 255);
-    const blueF = Math.floor(Math.random() * 255);
+    balls.forEach((ball) => {
+        const red = Math.floor(Math.random() * 255);
+        const green = Math.floor(Math.random() * 255);
+        const blue = Math.floor(Math.random() * 255);
 
-    ball.style.backgroundColor = `rgb(${red}%, ${green}%, ${blue}%)`;
-    ball.firstElementChild.style.color = `rgb(${redF}%, ${greenF}%, ${blueF}%)`;
-   })
+        const redF = Math.floor(Math.random() * 255);
+        const greenF = Math.floor(Math.random() * 255);
+        const blueF = Math.floor(Math.random() * 255);
+
+        ball.style.backgroundColor = `rgb(${red}%, ${green}%, ${blue}%)`;
+        ball.firstElementChild.style.color = `rgb(${redF}%, ${greenF}%, ${blueF}%)`;
+    })
 })
 
 // sekcja balls facebook
@@ -151,4 +174,3 @@ arrow.addEventListener('click', function () {
         behavior: "smooth"
     })
 })
-
