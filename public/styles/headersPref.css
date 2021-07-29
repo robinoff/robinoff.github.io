@@ -39,7 +39,7 @@ body {
     overflow: hidden;
     margin: 0 auto;
     background-color: whitesmoke;
-    -webkit-overflow-scrolling:touch;
+    z-index: -222;
     
 }
 
