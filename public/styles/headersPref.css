@@ -50,8 +50,8 @@ body {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     overflow: hidden;
-    
-    
+
+
 }
 
 .wrapper div.img::before {
@@ -70,8 +70,9 @@ body {
     -o-transition: .5s;
     transition: .5s;
     z-index: 1;
-    
+
 }
+
 .wrapper div.img::after {
     content: "";
     display: block;
@@ -118,7 +119,7 @@ body {
     transform: translate(-50%, -50%);
     background-color: transparent;
     z-index: 2;
-   
+
 
 }
 
@@ -137,7 +138,8 @@ h1.loading {
     letter-spacing: 4px;
     text-align: center;
     z-index: 3;
-    
+    user-select: none;
+
 
 }
 
@@ -152,8 +154,8 @@ h1.loading {
     height: 40px;
     background-color: red;
     border-radius: 50%;
-              
-    
+
+
 
 }
 
@@ -170,7 +172,7 @@ h1.loading {
     background-color: green;
     border-radius: 50%;
 
-    
+
 }
 
 
@@ -187,7 +189,7 @@ h1.loading {
     background-color: blue;
     border-radius: 50%;
 
-   
+
 
 }
 
