@@ -43,12 +43,12 @@ body {
 
 .wrapper img {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: auto;
-    height: 100vh;
-
-
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    
 }
 
 /* .wrapper {
@@ -1119,7 +1119,6 @@ div.arrows.active {
 /* media */
 
 @media (max-width: 1025px) {
-
     h1.loading {
         font-size: 50px;
     }
