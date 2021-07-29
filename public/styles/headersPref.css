@@ -1105,9 +1105,9 @@ div.arrows.active {
 /* media */
 
 @media (max-width: 1025px) {
-    .wrapper {
+    /* .wrapper {
         position: absolute;
-    }
+    } */
     h1.loading {
         font-size: 50px;
     }
@@ -1172,9 +1172,9 @@ div.arrows.active {
 }
 
 @media (max-width: 640px) {
-    .wrapper {
+    /* .wrapper {
         position: absolute;
-    }
+    } */
 
     h1.loading {
         font-size: 25px;
@@ -1265,9 +1265,9 @@ div.arrows.active {
 
 
 @media (max-width: 540px) {
-    .wrapper {
+    /* .wrapper {
         position: absolute;
-    }
+    } */
     h1.loading {
         font-size: 22px;
     }
@@ -1356,9 +1356,9 @@ div.arrows.active {
 }
 
 @media (max-width: 414px) {
-    .wrapper {
+    /* .wrapper {
         position: absolute;
-    }
+    } */
     h1.loading {
         font-size: 25px;
     }
@@ -1448,9 +1448,9 @@ div.arrows.active {
 
 
 @media (max-width: 320px) {
-    .wrapper {
+    /* .wrapper {
         position: absolute;
-    }
+    } */
     h1.loading {
         font-size: px;
     }
