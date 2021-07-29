@@ -72,8 +72,8 @@ balls.forEach((ball) => {
 
 
 balls.forEach((ball) => {
-    const zIndex = Math.floor(Math.random() * balls.length);
     ball.addEventListener('mouseover', function () {
+        const zIndex = Math.floor(Math.random() * balls.length);
         this.style.zIndex = zIndex;
     })
 }
