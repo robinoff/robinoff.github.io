@@ -12,10 +12,10 @@ let interval;
 
 
 function addClass() {
-    const h1Left = document.querySelector('.left');
-    const h1Right = document.querySelector('.right')
-    h1Left.classList.add('active');
-    h1Right.classList.add('active');
+    const divImg = document.querySelector('div.img');
+    
+    divImg.classList.add('active');
+    
 }
 
 
@@ -71,14 +71,13 @@ balls.forEach((ball) => {
 // sekcja ball z-index
 
 
-function changeZIndex() {
-    const indexZ = Math.floor(Math.random() * (3 - 0 + 1) + 0);
-    const index =  Math.floor(Math.random() * balls.length);
-    balls[index].style.zIndex = indexZ;
-    console.log(balls[index].style.zIndex);
+balls.forEach((ball) => {
+    const zIndex = Math.floor(Math.random() * balls.length);
+    ball.addEventListener('mouseover', function () {
+        this.style.zIndex = zIndex;
+    })
 }
-
-setInterval(changeZIndex, 8000);
+)
 
 
 // dotykowe ekrany

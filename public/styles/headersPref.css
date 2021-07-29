@@ -37,19 +37,73 @@ body {
     height: 100vh;
     overflow: hidden;
     margin: 0 auto;
+    background-color: whitesmoke;
 
 
 }
 
-.wrapper img {
+.wrapper div.img {
     position: absolute;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+    overflow: hidden;
+    
     
 }
+
+.wrapper div.img::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(100%, -50%);
+    -ms-transform: translate(100%, -50%);
+    transform: translate(100%, -50%);
+    width: 50%;
+    height: 20vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+    z-index: 1;
+    
+}
+.wrapper div.img::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    -webkit-transform: translate(-100%, -50%);
+    -ms-transform: translate(-100%, -50%);
+    transform: translate(-100%, -50%);
+    width: 50%;
+    height: 20vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+    z-index: 1;
+}
+
+
+
+.wrapper div.img.active::before {
+    -webkit-transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%);
+    transform: translate(0%, -50%);
+}
+
+.wrapper div.img.active::after {
+    -webkit-transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%);
+    transform: translate(0%, -50%);
+}
+
 
 /* .wrapper {
     position: relative;
@@ -226,52 +280,6 @@ h1.loading {
     display: block;
 }
 
-.left {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(100%, -50%);
-    -ms-transform: translate(100%, -50%);
-    transform: translate(100%, -50%);
-    width: 50%;
-    height: 20vh;
-    background-color: rgba(0, 0, 0, 0.5);
-    -webkit-transition: .5s;
-    -o-transition: .5s;
-    transition: .5s;
-    z-index: 1;
-   
-}
-
-.right {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    -webkit-transform: translate(-100%, -50%);
-    -ms-transform: translate(-100%, -50%);
-    transform: translate(-100%, -50%);
-    width: 50%;
-    height: 20vh;
-    background-color: rgba(0, 0, 0, 0.5);
-    -webkit-transition: .5s;
-    -o-transition: .5s;
-    transition: .5s;
-    z-index: 1;
-   
-
-}
-
-.left.active {
-    -webkit-transform: translate(0%, -50%);
-    -ms-transform: translate(0%, -50%);
-    transform: translate(0%, -50%);
-}
-
-.right.active {
-    -webkit-transform: translate(0%, -50%);
-    -ms-transform: translate(0%, -50%);
-    transform: translate(0%, -50%);
-}
 
 /* animacja */
 
