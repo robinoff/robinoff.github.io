@@ -31,8 +31,8 @@ function addDots() {
 }
 
 window.addEventListener('load', function (e) {
-    alert('page is loaded');
-   
+    
+      console.log('zaladowana');
     
 });
 
