@@ -13,9 +13,9 @@ let interval;
 
 function addClass() {
     const divImg = document.querySelector('div.img');
-    
+
     divImg.classList.add('active');
-    
+
 }
 
 
@@ -30,24 +30,28 @@ function addDots() {
 
 }
 
-window.addEventListener('load', function (e) {
-    
-      console.log('zaladowana');
-    
-});
+(async () => {
+    await window.addEventListener('load', function (e) {
+        console.log('zaladowana');
+    });
+    await setTimeout(() => {
+        addClass()
+    }, 1000);
+    await setTimeout(() => {
+        interval = setInterval(addDots, time)
+    }, 2000);
+    await balls.forEach((ball) => {
+        ball.classList.add('start');
+    })
 
-setTimeout(() => {
-    addClass()
-}, 1000);
-
-setTimeout(() => {
-    interval = setInterval(addDots, time)
-}, 2000);
+})();
 
 
-balls.forEach((ball) => {
-    ball.classList.add('start');
-})
+
+
+
+
+
 
 
 // sekcja balls kolory
@@ -80,8 +84,7 @@ balls.forEach((ball) => {
         const zIndex = Math.floor(Math.random() * balls.length);
         this.style.zIndex = zIndex;
     })
-}
-)
+})
 
 
 // dotykowe ekrany
