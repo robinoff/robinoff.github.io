@@ -36,7 +36,7 @@ function loadPage() {
         resolve( setTimeout(() => {
             window.addEventListener('load', function (e) {
             console.log('gotowe');
-        }, 3000);
+        }, 2000);
             
         }))
     })
@@ -65,7 +65,7 @@ loadPage()
                 ball.classList.add('start');
                 console.log('animacja');
             })
-        }, 3000);
+        }, 1000);
     })
 
 
