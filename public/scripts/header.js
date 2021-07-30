@@ -65,7 +65,7 @@ loadPage()
                 ball.classList.add('start');
                 console.log('animacja');
             })
-        }, 4000);
+        }, 3000);
     })
 
 
