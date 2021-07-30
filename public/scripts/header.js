@@ -12,41 +12,58 @@ let interval;
 
 
 function addClass() {
-    const divImg = document.querySelector('div.img');
+    return new Promise((resolve) => {
+        const divImg = document.querySelector('div.img');
 
-    divImg.classList.add('active');
-
-}
-
-
-
-function addDots() {
-
-    h1.textContent += text[index];
-    index++;
-    if (index === text.length) {
-        clearInterval(interval)
-    }
-
-}
-
-(async () => {
-    await window.addEventListener('load', function (e) {
-        console.log('zaladowana');
-    });
-    await setTimeout(() => {
-        addClass()
-        console.log('zrobione');
-    }, 1000);
-    await setTimeout(() => {
-        interval = setInterval(addDots, time)
-        console.log('kolejne');
-    }, 2000);
-    await balls.forEach((ball) => {
-        ball.classList.add('start');
+        divImg.classList.add('active');
     })
 
-})();
+}
+
+function addDots() {
+    return new Promise((resolve) => {
+        h1.textContent += text[index];
+        index++;
+        if (index === text.length) {
+            clearInterval(interval)
+        }
+
+    })
+}
+
+function loadPage() {
+    return new Promise((resolve) => {
+        resolve(window.addEventListener('load', function (e) {
+            console.log('zaladowana');
+        }))
+    })
+}
+
+loadPage()
+    .then(() => {
+        setTimeout(() => {
+            addClass();
+            console.log('addClass');
+        }, 5000);
+
+    })
+    .then(() => {
+        setTimeout(() => {
+            interval = setInterval(addDots, time);
+            console.log('interval');
+
+        }, 10000);
+    })
+    .then(() => {
+        setTimeout(() => {
+            
+            balls.forEach((ball) => {
+                ball.classList.add('start');
+                console.log('animacja');
+            })
+        }, 15000);
+    })
+
 
 
 
