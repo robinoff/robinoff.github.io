@@ -36,21 +36,17 @@ function addDots() {
     });
     await setTimeout(() => {
         addClass()
+        console.log('zrobione');
     }, 1000);
     await setTimeout(() => {
         interval = setInterval(addDots, time)
+        console.log('kolejne');
     }, 2000);
     await balls.forEach((ball) => {
         ball.classList.add('start');
     })
 
 })();
-
-
-
-
-
-
 
 
 
