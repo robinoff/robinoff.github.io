@@ -44,7 +44,7 @@ loadPage()
         setTimeout(() => {
             addClass();
             console.log('addClass');
-        }, 5000);
+        }, 2000);
 
     })
     .then(() => {
@@ -52,7 +52,7 @@ loadPage()
             interval = setInterval(addDots, time);
             console.log('interval');
 
-        }, 10000);
+        }, 3000);
     })
     .then(() => {
         setTimeout(() => {
@@ -61,7 +61,7 @@ loadPage()
                 ball.classList.add('start');
                 console.log('animacja');
             })
-        }, 15000);
+        }, 4000);
     })
 
 
