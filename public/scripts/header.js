@@ -36,7 +36,10 @@ function loadPage() {
         resolve(window.addEventListener('load', function (e) {
             const image = document.querySelector('.wrapper div.img');
             const imageLoaded = image.complete;
-            console.log('completed');
+            if(imageLoaded) {
+
+                console.log('completed');
+            }
         }))
     })
 }
