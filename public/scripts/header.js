@@ -31,19 +31,19 @@ function addDots() {
     })
 }
 
-function loadPage() {
+function loadPage(time) {
     return new Promise((resolve) => {
         resolve( setTimeout(() => {
             window.addEventListener('load', function (e) {
             console.log('gotowe');
-        }, 2000);
+        }, time);
             
         }))
     })
 }
 
 
-loadPage()
+loadPage(5000)
     .then(() => {
         setTimeout(() => {
             addClass();
