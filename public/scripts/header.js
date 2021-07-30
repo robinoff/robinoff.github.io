@@ -38,11 +38,11 @@ window.addEventListener('load', function (e) {
 
 setTimeout(() => {
     addClass()
-}, 100);
+}, 1000);
 
 setTimeout(() => {
     interval = setInterval(addDots, time)
-}, 200);
+}, 2000);
 
 
 balls.forEach((ball) => {
