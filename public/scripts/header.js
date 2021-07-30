@@ -34,7 +34,9 @@ function addDots() {
 function loadPage() {
     return new Promise((resolve) => {
         resolve(window.addEventListener('load', function (e) {
-            console.log('zaladowana');
+            const image = document.querySelector('.wrapper div.img');
+            const imageLoaded = image.complete;
+            console.log('completed');
         }))
     })
 }
@@ -63,8 +65,6 @@ loadPage()
             })
         }, 4000);
     })
-
-
 
 
 // sekcja balls kolory
