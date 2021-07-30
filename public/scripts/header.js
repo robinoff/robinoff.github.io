@@ -33,16 +33,15 @@ function addDots() {
 
 function loadPage() {
     return new Promise((resolve) => {
-        resolve(window.addEventListener('load', function (e) {
-            const image = document.querySelector('.wrapper div.img');
-            const imageLoaded = image.complete;
-            if(imageLoaded) {
-
-                console.log('completed');
-            }
+        resolve( setTimeout(() => {
+            window.addEventListener('load', function (e) {
+            console.log('gotowe');
+        }, 3000);
+            
         }))
     })
 }
+
 
 loadPage()
     .then(() => {
