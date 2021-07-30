@@ -31,19 +31,23 @@ function addDots() {
 }
 
 window.addEventListener('load', function (e) {
-    setTimeout(() => {
-        addClass()
-    }, 100);
-
-    setTimeout(() => {
-        interval = setInterval(addDots, time)
-    }, 200);
-
-    balls.forEach((ball) => {
-        ball.classList.add('start');
-    })
+    alert('page is loaded');
+   
     
 });
+
+setTimeout(() => {
+    addClass()
+}, 100);
+
+setTimeout(() => {
+    interval = setInterval(addDots, time)
+}, 200);
+
+
+balls.forEach((ball) => {
+    ball.classList.add('start');
+})
 
 
 // sekcja balls kolory
