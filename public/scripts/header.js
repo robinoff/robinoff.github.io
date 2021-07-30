@@ -12,61 +12,38 @@ let interval;
 
 
 function addClass() {
-    return new Promise((resolve) => {
-        const divImg = document.querySelector('div.img');
-
-        divImg.classList.add('active');
-    })
-
+    const divImg = document.querySelector('div.img');
+    
+    divImg.classList.add('active');
+    
 }
+
+
 
 function addDots() {
-    return new Promise((resolve) => {
-        h1.textContent += text[index];
-        index++;
-        if (index === text.length) {
-            clearInterval(interval)
-        }
 
-    })
+    h1.textContent += text[index];
+    index++;
+    if (index === text.length) {
+        clearInterval(interval)
+    }
+
 }
 
-function loadPage(time) {
-    return new Promise((resolve) => {
-        resolve( setTimeout(() => {
-            window.addEventListener('load', function (e) {
-            console.log('gotowe');
-        }, time);
-            
-        }))
-    })
-}
+window.addEventListener('load', function (e) {
+    setTimeout(() => {
+        addClass()
+    }, 100);
 
+    setTimeout(() => {
+        interval = setInterval(addDots, time)
+    }, 200);
 
-loadPage(5000)
-    .then(() => {
-        setTimeout(() => {
-            addClass();
-            console.log('addClass');
-        }, 2000);
-
+    balls.forEach((ball) => {
+        ball.classList.add('start');
     })
-    .then(() => {
-        setTimeout(() => {
-            interval = setInterval(addDots, time);
-            console.log('interval');
-
-        }, 3000);
-    })
-    .then(() => {
-        setTimeout(() => {
-            
-            balls.forEach((ball) => {
-                ball.classList.add('start');
-                console.log('animacja');
-            })
-        }, 1000);
-    })
+    
+});
 
 
 // sekcja balls kolory
@@ -99,7 +76,8 @@ balls.forEach((ball) => {
         const zIndex = Math.floor(Math.random() * balls.length);
         this.style.zIndex = zIndex;
     })
-})
+}
+)
 
 
 // dotykowe ekrany
