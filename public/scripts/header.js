@@ -34,8 +34,8 @@ function addDots() {
 
 img.src = "../public/img/pileczki.jpg";
 
-img.addEventListener('load', function (e) {
-   
+window.addEventListener('load', function (e) {
+   console.log('ready');
 
 });
 
