@@ -4,6 +4,7 @@
 
 const h1 = document.querySelector('.loading');
 const balls = document.querySelectorAll('.ball');
+const img = document.querySelector('img.header');
 
 const text = "FITNESS MÓZGU";
 let time = 140;
@@ -29,6 +30,8 @@ function addDots() {
     }
 
 }
+
+img.src = "../public/img/pileczki.jpg";
 
 window.addEventListener('load', function (e) {
     setTimeout(() => {
