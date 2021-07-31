@@ -35,7 +35,7 @@ function addDots() {
 img.src = "../public/img/pileczki.jpg";
 
 window.addEventListener('DOMContentLoaded', function (e) {
-    console.log('ready');
+    console.log('ready now');
 
     setTimeout(() => {
         addClass()
