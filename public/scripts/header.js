@@ -14,9 +14,9 @@ let interval;
 
 function addClass() {
     const divImg = document.querySelector('div.img');
-    
+
     divImg.classList.add('active');
-    
+
 }
 
 
@@ -31,21 +31,26 @@ function addDots() {
 
 }
 
+
 img.src = "../public/img/pileczki.jpg";
 
 window.addEventListener('load', function (e) {
-    setTimeout(() => {
-        addClass()
-    }, 100);
+    if (img.complete) {
+        console.log('zdjecie załadowane');
+        setTimeout(() => {
+            addClass()
+        }, 100);
 
-    setTimeout(() => {
-        interval = setInterval(addDots, time)
-    }, 200);
+        setTimeout(() => {
+            interval = setInterval(addDots, time)
+        }, 200);
 
-    balls.forEach((ball) => {
-        ball.classList.add('start');
-    })
-    
+        balls.forEach((ball) => {
+            ball.classList.add('start');
+        })
+    }
+
+
 });
 
 
@@ -71,16 +76,6 @@ balls.forEach((ball) => {
     })
 })
 
-// sekcja ball z-index
-
-
-balls.forEach((ball) => {
-    ball.addEventListener('mouseover', function () {
-        const zIndex = Math.floor(Math.random() * balls.length);
-        this.style.zIndex = zIndex;
-    })
-}
-)
 
 
 // dotykowe ekrany
