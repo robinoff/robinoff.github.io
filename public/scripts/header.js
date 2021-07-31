@@ -38,17 +38,19 @@ img.addEventListener('load', function (e) {
 
     setTimeout(() => {
         console.log('załadowane');
-    }, 2000); 
+    }, 2000);
+
+    setTimeout(() => {
+        addClass()
+    }, 100);
+
+    setTimeout(() => {
+        interval = setInterval(addDots, time)
+    }, 200);
 });
 
 
-setTimeout(() => {
-    addClass()
-}, 100);
 
-setTimeout(() => {
-    interval = setInterval(addDots, time)
-}, 200);
 
 balls.forEach((ball) => {
     ball.classList.add('start');
