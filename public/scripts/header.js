@@ -34,23 +34,26 @@ function addDots() {
 
 img.src = "../public/img/pileczki.jpg";
 
-window.addEventListener('load', function (e) {
-   console.log('ready');
+img.addEventListener('load', function (e) {
+    console.log('ready');
+    
+    setTimeout(() => {
+        addClass()
+    }, 100);
+
+    setTimeout(() => {
+        interval = setInterval(addDots, time)
+    }, 200);
+
+    balls.forEach((ball) => {
+        ball.classList.add('start');
+    })
+
 
 });
 
 
-setTimeout(() => {
-    addClass()
-}, 100);
 
-setTimeout(() => {
-    interval = setInterval(addDots, time)
-}, 200);
-
-balls.forEach((ball) => {
-    ball.classList.add('start');
-})
 
 // sekcja balls kolory
 
