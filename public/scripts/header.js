@@ -34,23 +34,25 @@ function addDots() {
 
 img.src = "../public/img/pileczki.jpg";
 
-window.addEventListener('load', function (e) {
-   
-    setTimeout(() => {
-        addClass()
-    }, 100);
+img.addEventListener('load', function (e) {
 
     setTimeout(() => {
-        interval = setInterval(addDots, time)
-    }, 200);
-
-    balls.forEach((ball) => {
-        ball.classList.add('start');
-    })
-
-
+        console.log('załadowane');
+    }, 2000); 
 });
 
+
+setTimeout(() => {
+    addClass()
+}, 100);
+
+setTimeout(() => {
+    interval = setInterval(addDots, time)
+}, 200);
+
+balls.forEach((ball) => {
+    ball.classList.add('start');
+})
 
 
 
