@@ -200,18 +200,18 @@ h1.loading {
 
 
 .one.start {
-    -webkit-animation: red 6s 4s linear infinite;
-    animation: red 6s 4s linear infinite;
+    -webkit-animation: red 6s 1s linear infinite;
+    animation: red 6s 1s linear infinite;
 }
 
 .two.start {
-    -webkit-animation: green 6s 5s linear infinite;
-    animation: green 6s 5s linear infinite;
+    -webkit-animation: green 6s 2s linear infinite;
+    animation: green 6s 2s linear infinite;
 }
 
 .three.start {
-    -webkit-animation: blue 6s 6s linear infinite;
-    animation: blue 6s 6s linear infinite;
+    -webkit-animation: blue 6s 3s linear infinite;
+    animation: blue 6s 3s linear infinite;
 }
 
 

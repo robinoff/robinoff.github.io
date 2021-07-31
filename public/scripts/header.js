@@ -51,11 +51,6 @@ img.addEventListener('load', function (e) {
 });
 
 
-
-
-
-
-
 // sekcja balls kolory
 
 
