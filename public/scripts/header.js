@@ -19,8 +19,6 @@ function addClass() {
 
 }
 
-
-
 function addDots() {
 
     h1.textContent += text[index];
@@ -32,23 +30,83 @@ function addDots() {
 }
 
 
-img.src = "../public/img/pileczki.jpg";
+// img.src = "../public/img/pileczki.jpg";
 
-img.addEventListener('load', function (e) {
+// img.addEventListener('load', function (e) {
 
-    setTimeout(() => {
-        addClass()
-    }, 100);
+//     setTimeout(() => {
+//         addClass()
+//     }, 100);
 
-    setTimeout(() => {
-        interval = setInterval(addDots, time)
-    }, 200);
+//     setTimeout(() => {
+//         interval = setInterval(addDots, time)
+//     }, 200);
 
-    balls.forEach((ball) => {
-        ball.classList.add('start');
+//     balls.forEach((ball) => {
+//         ball.classList.add('start');
+//     })
+
+// });
+
+
+
+// sekcja promise
+
+function loadImg() {
+    return new Promise((resolve) => {
+
+        img.src = "../public/img/pileczki.jpg";
+
+        resolve(img.complete)
+    })
+}
+
+function addClass() {
+    return new Promise((resolve) => {
+
+        const divImg = document.querySelector('div.img');
+        divImg.classList.add('active');
+        setTimeout(resolve, 1000)
     })
 
-});
+}
+
+function addDots() {
+    return new Promise((resolve) => {
+
+        h1.textContent += text[index];
+        index++;
+        if (index === text.length) {
+            clearInterval(interval)
+        }
+        setTimeout(resolve, 1000)
+    })
+
+
+}
+
+function addBalls() {
+    return new Promise((resolve) => {
+        balls.forEach((ball) => {
+            ball.classList.add('start');
+        })
+        setTimeout(resolve, 200)
+    })
+}
+
+loadImg()
+    .then(() => {
+        console.log('zdjecie załadowane');
+        return addClass();
+    })
+    .then(() => {
+        console.log('paski poszły');
+        return interval = setInterval(addDots, 200);
+    })
+    .then(() => {
+        console.log('napis poszedł');
+        return addBalls();
+    })
 
 
 // sekcja balls kolory
@@ -97,10 +155,10 @@ document.addEventListener('touchstart', function () {
 
 balls.forEach((ball) => {
     if (document.querySelectorAll('i.fab').className = "active") {
-        
+
         ball.addEventListener('click', (() => {
             const url = 'https://www.facebook.com/profile.php?id=100050637652208';
-    
+
             const newWindow = window.open(url, "");
         }))
     }
@@ -144,7 +202,7 @@ document.addEventListener('scroll', function () {
     iconF.forEach((icon) => {
         if (scrollPosition / scrollTotal > 0.5) {
             icon.classList.add('active');
-            
+
         }
     })
 
