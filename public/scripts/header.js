@@ -56,8 +56,11 @@ function loadImg() {
     return new Promise((resolve) => {
 
         img.src = "../public/img/pileczki.jpg";
-
-        resolve(img.complete)
+        img.addEventListener('load', function () {
+            if (img.complete) {
+            resolve(img)
+        }
+        })        
     })
 }
 
