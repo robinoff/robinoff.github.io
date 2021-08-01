@@ -96,11 +96,14 @@ document.addEventListener('touchstart', function () {
 // sekcja balls facebook
 
 balls.forEach((ball) => {
-    ball.addEventListener('click', (() => {
-        const url = 'https://www.facebook.com/profile.php?id=100050637652208';
-
-        const newWindow = window.open(url, "");
-    }))
+    if (document.querySelectorAll('i.fab').className = "active") {
+        
+        ball.addEventListener('click', (() => {
+            const url = 'https://www.facebook.com/profile.php?id=100050637652208';
+    
+            const newWindow = window.open(url, "");
+        }))
+    }
 })
 
 
@@ -141,6 +144,7 @@ document.addEventListener('scroll', function () {
     iconF.forEach((icon) => {
         if (scrollPosition / scrollTotal > 0.5) {
             icon.classList.add('active');
+            
         }
     })
 
