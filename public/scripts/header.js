@@ -13,10 +13,10 @@ let interval;
 
 
 function addClass() {
+    console.log('addClass');
     const divImg = document.querySelector('div.img');
-
-    divImg.classList.add('active');
-
+    divImg.classList.add('active')
+    
 }
 
 function addDots() {
@@ -26,8 +26,15 @@ function addDots() {
     if (index === text.length) {
         clearInterval(interval)
     }
-
 }
+
+// function setTitle() {
+//     return new Promise((resolve) => {
+
+//         interval = setInterval(addDots, time)
+//         setTimeout(resolve, 5000)
+//     })
+// }
 
 
 // img.src = "../public/img/pileczki.jpg";
@@ -64,21 +71,26 @@ function loadImg(url) {
 }
 
 
-
 loadImg('../public/img/pileczki.jpg')
-    .then((img => document.querySelector('div.img').appendChild(img)))
-    .then(() => {
-        return addClass()
+    .then((img) => {
+        console.log('dodano zdjecie');
+        document.querySelector('div.img').appendChild(img)
     })
     .then(() => {
-        return setTimeout(() => {
-            interval = setInterval(addDots, time);
-        }, 1000)
+        setTimeout(addClass, 1000)
     })
     .then(() => {
-        balls.forEach((ball) => {
-            ball.classList.add('start');
-        })
+        setTimeout(() => {
+            interval = setInterval(addDots, time)
+        }, 2000);
+    })
+    .then(() => {
+        setTimeout(() => {
+            
+            balls.forEach((ball) => {
+                ball.classList.add('start');
+            })
+        }, 2500);
     })
     .catch(reason => console.log(reason))
 
