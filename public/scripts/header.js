@@ -74,7 +74,8 @@ function loadImg(url) {
 loadImg('../public/img/pileczki.jpg')
     .then((img) => {
         console.log('dodano zdjecie');
-        document.querySelector('div.img').appendChild(img)
+        document.querySelector('div.img').appendChild(img);
+        document.querySelector('div.img').appendChild(img).classList.add(header);
     })
     .then(() => {
         setTimeout(addClass, 1000)
