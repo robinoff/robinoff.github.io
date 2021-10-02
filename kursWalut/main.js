@@ -17,7 +17,7 @@ function createHtml() {
     const inputSearch = document.createElement('input');
     inputSearch.className = 'search';
     inputSearch.setAttribute('name', 'search');
-    inputSearch.setAttribute('placeholder', 'podaj szukaną frazę np: dolar, korona');
+    inputSearch.setAttribute('placeholder', 'podaj szukaną frazę np: peso...');
     inputSearch.setAttribute('type', 'text');
 
     const inputSubmit = document.createElement('input');
