@@ -1,3 +1,4 @@
 {
-    "beautify.config": ""
+    "beautify.config": "",
+    "liveServer.settings.port": 5501
 }

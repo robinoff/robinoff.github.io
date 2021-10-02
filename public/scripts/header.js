@@ -13,51 +13,38 @@ let interval;
 
 
 function addClass() {
-    console.log('addClass');
-    const divImg = document.querySelector('div.img');
-    divImg.classList.add('active')
-    
+    console.log('dodajemy paski');
+    return new Promise((resolve) => {
+        const divImg = document.querySelector('div.img');
+        divImg.classList.add('active')
+        setTimeout(resolve, 500);
+    })
 }
 
 function addDots() {
-
+    
     h1.textContent += text[index];
     index++;
     if (index === text.length) {
         clearInterval(interval)
     }
+    return new Promise((resolve) => {
+        setTimeout(resolve, 5000)
+        
+    })
 }
 
-// function setTitle() {
-//     return new Promise((resolve) => {
-
-//         interval = setInterval(addDots, time)
-//         setTimeout(resolve, 5000)
-//     })
-// }
-
-
-// img.src = "../public/img/pileczki.jpg";
-
-// img.addEventListener('load', function (e) {
-
-//     setTimeout(() => {
-//         addClass()
-//     }, 100);
-
-//     setTimeout(() => {
-//         interval = setInterval(addDots, time)
-//     }, 200);
-
-//     balls.forEach((ball) => {
-//         ball.classList.add('start');
-//     })
-
-// });
+function showBalls() {
+    console.log('czekamy na piłki');
+    return new Promise((resolve) => {
+        setTimeout(resolve, 100)
+    })
+}
 
 // sekcja Promise i funkcje po załadowaniu obrazka
 
 function loadImg(url) {
+    console.log('pobieramy zdjecie');
     return new Promise((resolve, reject) => {
         const img = new Image();
         img.addEventListener('load', ((event) => {
@@ -71,31 +58,63 @@ function loadImg(url) {
 }
 
 
-loadImg('../public/img/pileczki.jpg')
+loadImg('public/img/pileczki.jpg')
     .then((img) => {
-        console.log('dodano zdjecie');
+        console.log('pobrano zdjecie');
         document.querySelector('div.img').appendChild(img);
-        document.querySelector('div.img').appendChild(img).classList.add(header);
+        document.querySelector('div.img').appendChild(img).classList.add('header');
     })
     .then(() => {
-        setTimeout(addClass, 1000)
+        console.log("wyswietlono, pora na paski");
+        return addClass()
     })
     .then(() => {
-        setTimeout(() => {
-            interval = setInterval(addDots, time)
-        }, 2000);
+        console.log('paski wjechały');
+        interval = setInterval(addDots, time)
     })
     .then(() => {
-        setTimeout(() => {
-            
-            balls.forEach((ball) => {
-                ball.classList.add('start');
-            })
-        }, 2500);
+        return showBalls()
+    })
+    .then(() => {
+        console.log('gotowe');
+        balls.forEach((ball) => {
+            ball.classList.add('start');
+        })
     })
     .catch(reason => console.log(reason))
 
+//  ASYNC AWAIT
 
+// function ballsClass() {
+//     balls.forEach((ball) => {
+//         ball.classList.add('start');
+//     })
+// }
+
+// function loadImg(url) {
+//     console.log('pobieramy zdjecie');
+//     return new Promise((resolve, reject) => {
+//         const img = new Image();
+//         img.addEventListener('load', ((event) => {
+//             resolve(img)
+//         }))
+//         img.addEventListener('error', ((reason) => {
+//             reject(new Error(`failed to load ${url}`))
+//         }))
+//         img.src = url
+//     })
+// }
+// (async () => {
+//     await loadImg('public/img/pileczki.jpg')
+//         .then((img) => {
+//             document.querySelector('div.img').appendChild(img);
+//             document.querySelector('div.img').appendChild(img).classList.add('header');
+//         });
+//     await addClass();
+//     interval = setInterval(addDots, time);
+//     await showBalls();    
+//     ballsClass();
+// })();
 
 
 // sekcja balls kolory

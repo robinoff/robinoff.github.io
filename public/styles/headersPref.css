@@ -10,9 +10,9 @@
     padding: 0;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+    /* -webkit-user-select: none;
+    -ms-user-select: none; */
+    /* user-select: none; */
     
 }
 
@@ -1106,6 +1106,9 @@ div.arrows {
 div.arrows.active {
     display: block;
 }
+a {
+    z-index: 33333;
+}
 
 /* media */
 
@@ -1358,6 +1361,10 @@ div.arrows.active {
         bottom: 20px;
         font-size: 40px;
     }
+}
+a {
+    position: relative;
+    
 }
 
 @media (max-width: 414px) {
