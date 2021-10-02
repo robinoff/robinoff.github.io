@@ -126,11 +126,13 @@ h1.title span.data {
     }
     .search {
         grid-column: 1/2;
+        justify-self: center;
     }
     .submit {
         grid-column: 1/2;
         margin: 10px 0;
         padding: 5px 0;
+        justify-self: center;
     }
     .res {
         display: grid;
@@ -158,16 +160,19 @@ h1.title span.data {
 @media (max-width: 500px) {
     .form {
         grid-template-columns: 1fr;
-        width: 100%;
+        justify-content: center;
+        
     }
 
     .search {
         grid-column: 1/2;
+       justify-self: center;
     }
     .submit {
         grid-column: 1/2;
         margin: 10px 0;
         padding: 5px 0;
+        justify-self: center;
     }
     .res {
         display: grid;
