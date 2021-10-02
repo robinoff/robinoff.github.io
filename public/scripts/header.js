@@ -63,10 +63,13 @@ loadImg('public/img/pileczki.jpg')
         console.log('pobrano zdjecie');
         document.querySelector('div.img').appendChild(img);
         document.querySelector('div.img').appendChild(img).classList.add('header');
+<<<<<<< HEAD
     })
     .then(() => {
         console.log("wyswietlono, pora na paski");
         return addClass()
+=======
+>>>>>>> 7ee4f33525cd37e0b8b56f40aaa7289ca4a771da
     })
     .then(() => {
         console.log('paski wjechały');
