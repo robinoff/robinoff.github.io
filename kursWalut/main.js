@@ -97,7 +97,7 @@ form.addEventListener('submit', (e) => searchTable(e));
 
 
 
-fetch('http://api.nbp.pl/api/exchangerates/tables/A/', {
+fetch('https://api.nbp.pl/api/exchangerates/tables/A/', {
         method: 'GET',
         mode: 'cors',
         headers: {
@@ -116,7 +116,7 @@ fetch('http://api.nbp.pl/api/exchangerates/tables/A/', {
         console.log(new Error(err));
     });
 
-fetch('http://api.nbp.pl/api/exchangerates/tables/B/', {
+fetch('https://api.nbp.pl/api/exchangerates/tables/B/', {
         method: 'GET',
         mode: 'cors',
         headers: {
