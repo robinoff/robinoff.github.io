@@ -92,10 +92,13 @@ h1.title span.data {
     display: grid;
     grid-template-columns: 1fr;
     margin-bottom: 20px;
-    padding: 50px;
-    /* height: 10vh; */
+    padding: 30px;
     border: none;
     font-size: 20px;
+}
+.res p {
+    text-align: center;
+    color: brown;
 }
 .blue {
     background-color: lightblue;
@@ -184,7 +187,10 @@ h1.title span.data {
         width: 100%;
         padding: 0;
         margin: 0 auto 60px;
-       
+    }
+    .res p {
+        font-size: 15px;
+
     }
     div {
         font-size: 12px;

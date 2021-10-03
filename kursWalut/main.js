@@ -80,6 +80,9 @@ function searchTable(e) {
     let listCode = list.filter((item, index) => {
         return item.textContent.toLowerCase().includes(searchEl);
     });
+    if(listCode.length === 0) {
+        document.querySelector('.res').innerHTML = '<p>Podana fraza nie istnieje...szukaj dalej...</p>';
+    }
     
     listCode.forEach((item) => {
         document.querySelector('.res').appendChild(item.parentNode.parentNode.cloneNode(true));
