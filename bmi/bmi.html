@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator BMI i Przemiany materii</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <h1 class="title">Kalkulator BMI i Podstawowej Przemiany Materii.</h1>
+
+        <form class="form"> 
+            <label for="" class="plac" >Wybierz płeć:</label>
+            <select name="plec" id="sel">
+                <option value="zero" default>Wybierz płeć:</option>
+                <option value="man" >Mężczyzna</option>
+                <option value="woman">Kobieta</option>
+               
+            </select>
+            <label for="">Wiek:</label>
+            <input type="text" class="age" name="age" placeholder="wiek">
+            <label for="" class="">Wzrost:</label>
+            <input type="text" class="height" name="height" placeholder="wzrost w centymetrach">
+            <label for="" class="">Waga:</label>
+            <input type="text" class="weight" name="weight" placeholder="waga w kilogramach">
+            
+            
+            <input type="submit" class="submit" value="Sprawdź">
+        </form>
+        <div class="res">Podaj dane...nie wstydź się...</div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
