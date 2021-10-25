@@ -54,9 +54,29 @@ body {
     background-color: lightgoldenrodyellow;
     border: none;
     border-bottom: 1px solid black;
-    appearance: none;
-    -webkit-appearance: none;
+
 }
+
+input:-webkit-autofill,
+select:-webkit-autofill,
+input:-webkit-autofill:hover,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus {
+    border-bottom: 1px solid black;
+    -webkit-text-fill-color: black;
+    -webkit-box-shadow: 0 0 0 50px lightgoldenrodyellow inset;
+
+}
+
+select:focus {
+    outline: none;
+
+}
+
 
 .form input:focus {
     outline: none;
@@ -70,6 +90,12 @@ body {
     font-size: 15px;
     text-align: center;
 }
+
+#sel option {
+    background-color: lightgoldenrodyellow;
+    padding: 10px;
+}
+
 
 
 .form input.submit {
@@ -97,10 +123,7 @@ body {
     font-weight: bold;
 }
 
-input:-internal-autofill-selected {
-    appearance: menulist-button;
-    color: yellow !important;
-}
+
 
 @media (max-width: 800px) {
     .title {
@@ -126,7 +149,6 @@ input:-internal-autofill-selected {
 
     option {
         color: black;
-        border: none;
 
     }
 
@@ -158,8 +180,7 @@ input:-internal-autofill-selected {
 
     option {
         color: black;
-        border: none;
-
+        border: turquoise;
     }
 
 }
