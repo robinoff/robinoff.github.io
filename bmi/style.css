@@ -88,10 +88,7 @@ option {
     color: darkred;
     border-radius: 10px;
     transition: .5s;
-}
-
-.form input.submit:hover {
-    color: black;
+    cursor: pointer;
 }
 
 .res {
