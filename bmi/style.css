@@ -54,6 +54,8 @@ body {
     background-color: lightgoldenrodyellow;
     border: none;
     border-bottom: 1px solid black;
+    appearance: none;
+    -webkit-appearance: none;
 }
 
 .form input:focus {
@@ -95,6 +97,11 @@ body {
     font-weight: bold;
 }
 
+input:-internal-autofill-selected {
+    appearance: menulist-button;
+    color: yellow !important;
+}
+
 @media (max-width: 800px) {
     .title {
         width: 80%;
@@ -116,10 +123,11 @@ body {
         color: darkred;
         border: darkred 1px solid;
     }
+
     option {
         color: black;
         border: none;
-    
+
     }
 
 }
@@ -142,14 +150,16 @@ body {
         font-size: 15px;
         font-weight: normal;
     }
+
     .form input.submit {
         color: darkred;
         border: darkred 1px solid;
     }
+
     option {
         color: black;
         border: none;
-    
+
     }
 
 }
