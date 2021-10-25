@@ -84,15 +84,14 @@ option {
     padding: 0;
     font-size: 15px;
     background-color: lightgoldenrodyellow;
-    border: lightskyblue;
-    color: black;
+    border: darkred 1px solid;
+    color: darkred;
     border-radius: 10px;
     transition: .5s;
 }
 
 .form input.submit:hover {
-    color: darkred;
-    border: 1px darkred solid;
+    color: black;
 }
 
 .res {
@@ -105,28 +104,6 @@ option {
     font-weight: bold;
 }
 
-@media (max-width: 400px) {
-    .title {
-        width: 80%;
-    }
-
-    .form {
-        width: 80%;
-    }
-
-    .res {
-        width: 80%;
-        margin: 0 auto;
-        background-color: lightgoldenrodyellow;
-    }
-
-    .res {
-        
-        border-radius: 20px;
-        font-size: 16px;
-        font-weight: normal;
-    }
-}
 @media (max-width: 800px) {
     .title {
         width: 80%;
@@ -138,14 +115,38 @@ option {
 
     .res {
         width: 80%;
-        margin: 0 auto;
-        background-color: lightgoldenrodyellow;
-    }
-
-    .res {
-        
         border-radius: 20px;
         font-size: 16px;
         font-weight: normal;
     }
+
+    .form input.submit {
+        color: darkred;
+        border: darkred 1px solid;
+    }
+
+}
+
+@media (max-width: 400px) {
+    .title {
+        width: 80%;
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    .form {
+        width: 80%;
+    }
+
+    .res {
+        width: 80%;
+        border-radius: 20px;
+        font-size: 15px;
+        font-weight: normal;
+    }
+    .form input.submit {
+        color: darkred;
+        border: darkred 1px solid;
+    }
+
 }
