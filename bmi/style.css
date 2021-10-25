@@ -104,3 +104,48 @@ option {
     border-radius: 30px;
     font-weight: bold;
 }
+
+@media (max-width: 400px) {
+    .title {
+        width: 80%;
+    }
+
+    .form {
+        width: 80%;
+    }
+
+    .res {
+        width: 80%;
+        margin: 0 auto;
+        background-color: lightgoldenrodyellow;
+    }
+
+    .res {
+        
+        border-radius: 20px;
+        font-size: 16px;
+        font-weight: normal;
+    }
+}
+@media (max-width: 800px) {
+    .title {
+        width: 80%;
+    }
+
+    .form {
+        width: 80%;
+    }
+
+    .res {
+        width: 80%;
+        margin: 0 auto;
+        background-color: lightgoldenrodyellow;
+    }
+
+    .res {
+        
+        border-radius: 20px;
+        font-size: 16px;
+        font-weight: normal;
+    }
+}
