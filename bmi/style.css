@@ -114,6 +114,7 @@ option {
     }
 
     .res {
+        height: 80px;
         width: 80%;
         border-radius: 20px;
         font-size: 16px;
@@ -139,6 +140,7 @@ option {
     }
 
     .res {
+        height: 80px;
         width: 80%;
         border-radius: 20px;
         font-size: 15px;
