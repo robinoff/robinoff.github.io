@@ -58,6 +58,7 @@ body {
 
 .form input:focus {
     outline: none;
+    background-color: lightgoldenrodyellow;
 }
 
 #sel {
@@ -67,12 +68,6 @@ body {
     font-size: 15px;
     text-align: center;
 }
-
-option {
-    color: darkred;
-
-}
-
 
 
 .form input.submit {
