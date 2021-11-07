@@ -1,6 +1,6 @@
 function counter() {
 
-    const endTime = new Date('2021-11-07 8:47:00').getTime();
+    const endTime = new Date('2021-11-07 9:09:00').getTime();
 
     const spanD = document.querySelector('span.d');
     const spanH = document.querySelector('span.h');
@@ -29,15 +29,19 @@ function counter() {
         spanH.textContent = `h:${hours}`;
         spanM.textContent = `m:${minutes}`;
         spanS.textContent = `s:${secs}`;
-        
-        
-        if (spanD.textContent === 'd:0' && spanH.textContent === 'h:00' && spanM.textContent === 'm:00' && spanS.textContent === 's:00') {
-            clearInterval(interval);
-            console.log('teraz');
+               
+              
+        if (endTime <= nowTime) {
+            clearInterval(interval); 
+            const spanList = document.querySelectorAll('span');
+            spanList.forEach((span) => {
+                span.textContent = '';
+                document.querySelector('p').textContent = 'Arka czasu...start';
+            })        
         }
     }, 1000);
 
 
-}
+};
 
-counter()
+counter();
