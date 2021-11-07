@@ -1,6 +1,6 @@
 function counter() {
 
-    const endTime = new Date('2021-11-07 8:42:00').getTime();
+    const endTime = new Date('2021-11-07 8:47:00').getTime();
 
     const spanD = document.querySelector('span.d');
     const spanH = document.querySelector('span.h');
